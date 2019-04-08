@@ -1,5 +1,6 @@
 import dataset as ds
 import fileParser as fp
+import scatterplot as plot
 import math
 
 
@@ -87,12 +88,12 @@ def predictionIncorrect(datapoint):
 def extractMisses():
     return dataset.extractSubset(predictionIncorrect)
 
+
 # @main
 if __name__ == "__main__":
 
     # user input
     datafile = input("Input-file: ")
-    outputfile = input("Output-file: ")
 
     # convert to dataset
     rawDatamatrix = fp.readFile(datafile)
@@ -108,6 +109,5 @@ if __name__ == "__main__":
         varAttr1 = computeVariance(c, 1, meanAttr1)
         classProb = computeClassProb(c)
         fp.writeFile(outputfile, [meanAttr0, varAttr0, meanAttr1, varAttr1, classProb], c)
-    fp.writeFile(outputfile, [extractMisses().length()], True)
 
     print('Done!')
