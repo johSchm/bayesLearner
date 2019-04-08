@@ -1,6 +1,6 @@
 import dataset as ds
 import fileParser as fp
-import scatterplot as plot
+import scatterplot as sp
 import math
 
 
@@ -105,15 +105,15 @@ if __name__ == "__main__":
 
     # class 0 -> A
     for c in range(0, 2):
-        print('\nResults for Class ' + c + ':')
+        print('\n--- Results for Class {} ---'.format(c))
         mean_attr0 = computeMean(c, 0)
         mean_attr1 = computeMean(c, 1)
-        print('Mean of attribute 1: ' + computeMean(c, 0))
-        print('Mean of attribute 2: ' + computeMean(c, 1))
-        print('Variance of attribute 1: ' + computeVariance(c, 0, mean_attr0))
-        print('Variance of attribute 1: ' + computeVariance(c, 1, mean_attr1))
-        print('Class probability: ' + computeClassProb(c))
+        print('Mean of attribute 1:\t{}'.format(computeMean(c, 0)))
+        print('Mean of attribute 2:\t{}'.format(computeMean(c, 1)))
+        print('Variance of attribute 1:\t{}'.format(computeVariance(c, 0, mean_attr0)))
+        print('Variance of attribute 1:\t{}'.format(computeVariance(c, 1, mean_attr1)))
+        print('Class probability:\t{}'.format(computeClassProb(c)))
 
-    plot.scatterplot(dataset[:, 1], dataset[:, 2], "x", "y", "data", "r")
+    sp.scatterplot(dataset[:, 1], dataset[:, 2], "x", "y", "data", "r")
 
     print('Done!')

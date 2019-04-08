@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
 
 
+def simpleplot(x_data, y_data):
+    plt.plot(x_data, y_data)
+    plt.show()
+
+
 def scatterplot(x_data, y_data, x_label="", y_label="", title="", color="r", yscale_log=False):
 
     # Create the plot object
