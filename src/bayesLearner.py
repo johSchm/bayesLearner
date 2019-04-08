@@ -95,6 +95,8 @@ if __name__ == "__main__":
     # user input
     datafile = input("Input-file: ")
 
+    print('Computing...')
+
     # convert to dataset
     rawDatamatrix = fp.readFile(datafile)
     dataset = ds.Dataset()
@@ -111,5 +113,7 @@ if __name__ == "__main__":
         print('Variance of attribute 1: ' + computeVariance(c, 0, mean_attr0))
         print('Variance of attribute 1: ' + computeVariance(c, 1, mean_attr1))
         print('Class probability: ' + computeClassProb(c))
+
+    plot.scatterplot(dataset[:, 1], dataset[:, 2], "x", "y", "data", "r")
 
     print('Done!')
