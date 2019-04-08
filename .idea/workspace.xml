@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a910858-294e-4398-9e70-21a0b9791098" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/bayesLearner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bayesLearner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scatterplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scatterplot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +17,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/bayesLearner.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="130">
-                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="791">
+                  <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
                   </folding>
@@ -242,8 +241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bayesLearner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="791">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

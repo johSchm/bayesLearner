@@ -103,11 +103,13 @@ if __name__ == "__main__":
 
     # class 0 -> A
     for c in range(0, 2):
-        meanAttr0 = computeMean(c, 0)
-        meanAttr1 = computeMean(c, 1)
-        varAttr0 = computeVariance(c, 0, meanAttr0)
-        varAttr1 = computeVariance(c, 1, meanAttr1)
-        classProb = computeClassProb(c)
-        fp.writeFile(outputfile, [meanAttr0, varAttr0, meanAttr1, varAttr1, classProb], c)
+        print('\nResults for Class ' + c + ':')
+        mean_attr0 = computeMean(c, 0)
+        mean_attr1 = computeMean(c, 1)
+        print('Mean of attribute 1: ' + computeMean(c, 0))
+        print('Mean of attribute 2: ' + computeMean(c, 1))
+        print('Variance of attribute 1: ' + computeVariance(c, 0, mean_attr0))
+        print('Variance of attribute 1: ' + computeVariance(c, 1, mean_attr1))
+        print('Class probability: ' + computeClassProb(c))
 
     print('Done!')
