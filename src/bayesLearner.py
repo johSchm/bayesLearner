@@ -93,15 +93,12 @@ if __name__ == "__main__":
     # user input
     datafile = input("Input-file: ")
     outputfile = input("Output-file: ")
-    #datafile = r"C:\Users\Johan\PycharmProjects\BayesLearner\resources\Example.tsv"
-    #outputfile = r"C:\Users\Johan\PycharmProjects\BayesLearner\resources\ExampleSOLVED.tsv"
 
     # convert to dataset
     rawDatamatrix = fp.readFile(datafile)
     dataset = ds.Dataset()
     dataset.addRawMatrix(rawDatamatrix)
     dataset.mapDatapointsToNumValues()
-    #dataset.print()
 
     # class 0 -> A
     for c in range(0, 2):
