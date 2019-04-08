@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a910858-294e-4398-9e70-21a0b9791098" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/bayesLearner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bayesLearner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scatterplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scatterplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +51,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/dataset.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="843">
-                  <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+                <state relative-caret-position="791">
+                  <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#22#0" expanded="true" />
                   </folding>
@@ -78,9 +77,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dataset.py" />
         <option value="$PROJECT_DIR$/src/scatterplot.py" />
         <option value="$PROJECT_DIR$/src/bayesLearner.py" />
+        <option value="$PROJECT_DIR$/src/dataset.py" />
       </list>
     </option>
   </component>
@@ -246,22 +245,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bayesLearner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="116" column="63" lean-forward="true" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="63" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -70,3 +70,10 @@ class Dataset:
             else:
                 column_set.append(datapoint.featureVector[column_number - 1])
         return column_set
+
+    def extract_class_points(self, class_value):
+        class_set = []
+        for datapoint in self.dataset:
+            if datapoint.classValue == class_value:
+                class_set.append(datapoint.featureVector)
+        return class_set
