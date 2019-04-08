@@ -61,3 +61,12 @@ class Dataset:
             if datapoint.classValue == classValue:
                 amount += 1
         return amount
+
+    def get_column(self, column_number):
+        column_set = []
+        for datapoint in self.dataset:
+            if column_number == 0:
+                column_set.append(datapoint.classValue)
+            else:
+                column_set.append(datapoint.featureVector[column_number - 1])
+        return column_set

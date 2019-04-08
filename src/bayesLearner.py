@@ -114,6 +114,6 @@ if __name__ == "__main__":
         print('Variance of attribute 1:\t{}'.format(computeVariance(c, 1, mean_attr1)))
         print('Class probability:\t{}'.format(computeClassProb(c)))
 
-    sp.scatterplot(dataset[:, 1], dataset[:, 2], "x", "y", "data", "r")
+    sp.scatterplot(dataset.get_column(1), dataset.get_column(2), "x", "y", "data", "r")
 
     print('Done!')
