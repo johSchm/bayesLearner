@@ -108,12 +108,13 @@ if __name__ == "__main__":
         print('\n--- Results for Class {} ---'.format(c))
         mean_attr0 = computeMean(c, 0)
         mean_attr1 = computeMean(c, 1)
-        print('Mean of attribute 1:\t{}'.format(computeMean(c, 0)))
-        print('Mean of attribute 2:\t{}'.format(computeMean(c, 1)))
+        print('Mean of attribute 1:\t\t{}'.format(computeMean(c, 0)))
+        print('Mean of attribute 2:\t\t{}'.format(computeMean(c, 1)))
         print('Variance of attribute 1:\t{}'.format(computeVariance(c, 0, mean_attr0)))
         print('Variance of attribute 1:\t{}'.format(computeVariance(c, 1, mean_attr1)))
-        print('Class probability:\t{}'.format(computeClassProb(c)))
+        print('Class probability:\t\t{}'.format(computeClassProb(c)))
 
-    sp.scatterplot(dataset.get_column(1), dataset.get_column(2), "x", "y", "data", "r")
+    sp.simpleplot(dataset.get_column(1), dataset.get_column(2))
+    #sp.scatterplot(dataset.get_column(1), dataset.get_column(2), "x", "y", "data", "r")
 
     print('Done!')
