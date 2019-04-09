@@ -89,6 +89,13 @@ def extractMisses():
     return dataset.extractSubset(predictionIncorrect)
 
 
+def extract_column_from_array_list(arrlist, column_number):
+    column_array = []
+    for i in arrlist:
+        column_array.append(i[column_number])
+    return column_array
+
+
 # @main
 if __name__ == "__main__":
 
@@ -114,7 +121,13 @@ if __name__ == "__main__":
         print('Variance of attribute 1:\t{}'.format(computeVariance(c, 1, mean_attr1)))
         print('Class probability:\t\t{}'.format(computeClassProb(c)))
 
-    sp.simpleplot(dataset.get_column(1), dataset.get_column(2))
-    #sp.scatterplot(dataset.get_column(1), dataset.get_column(2), "x", "y", "data", "r")
+    dataset_class0 = dataset.extract_class_points(0)
+    dataset_class1 = dataset.extract_class_points(1)
+
+    sp.simpleplot(
+        extract_column_from_array_list(dataset_class0, 0),
+        extract_column_from_array_list(dataset_class0, 1),
+        extract_column_from_array_list(dataset_class1, 0),
+        extract_column_from_array_list(dataset_class1, 1))
 
     print('Done!')
